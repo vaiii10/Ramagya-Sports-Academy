@@ -1,0 +1,358 @@
+<html>
+
+<head>
+    <title>Gallery</title>
+    <style>
+        body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: black;
+            color: white;
+        }
+
+        body {
+            font-size: 6vw;
+        }
+
+        p {
+            font-family: Rubik;
+            font-size: 25px;
+        }
+
+        #back {
+            /* size: 50px; */
+            /* z-index: -1; */
+            height: 50vh;
+            /* width: 100vh; */
+        }
+
+        .leftText {
+
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0.6em;
+            margin-left: 1.1em;
+            display: block;
+        }
+
+        .love {
+            font-size: 0.8em;
+            color: indianred;
+            font-weight: bold;
+        }
+
+        small {
+            font-size: 0.7em;
+        }
+
+        .heart {
+            color: indianred;
+            font-size: 1em;
+            text-align: right;
+
+            position: absolute;
+
+            font-weight: bold;
+
+            right: 1em;
+            bottom: 1em;
+        }
+
+
+        .since {
+            font-size: 0.7em;
+        }
+
+        .days {
+            font-size: 0.7em;
+        }
+
+        .love,
+        .since,
+        .days {
+            letter-spacing: 0.1em;
+        }
+
+        /*Basic structure of slider*/
+        .container {
+            margin-left: 35vh;
+            height: 90vh;
+            width: 120vh;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            overflow: hidden;
+            border: 10px solid #ffffff;
+            border-radius: 8px;
+            box-shadow: -1px 5px 15px black;
+        }
+
+        /*Area of images*/
+        .wrapper {
+            width: 50vh;
+            height: 100vh;
+            display: flex;
+            animation: slide 60s infinite;
+        }
+
+        img {
+            border-radius: 15px;
+            width: 50vh;
+            margin: 15px;
+            height: 100vh;
+        }
+
+        /*Animation activated by keyframes*/
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            3.7% {
+                transform: translate(0%);
+            }
+
+            7.4% {
+                transform: translate(-100%);
+            }
+
+            11.1% {
+                transform: translate(-200%);
+            }
+
+            14.8% {
+                transform: translate(-300%);
+            }
+
+            18.5% {
+                transform: translate(-400%);
+            }
+
+            22.2% {
+                transform: translate(-500%);
+            }
+
+            25.9% {
+                transform: translate(-600%);
+            }
+
+            29.6% {
+                transform: translate(-700%);
+            }
+
+            33.3% {
+                transform: translate(-800%);
+            }
+
+            37% {
+                transform: translate(-900%);
+            }
+
+            40.7% {
+                transform: translate(-1000%);
+            }
+
+            44.4% {
+                transform: translate(-1100%);
+            }
+
+            48.1% {
+                transform: translate(-1200%);
+            }
+
+            51.8% {
+                transform: translate(-1300%);
+            }
+
+            55.5% {
+                transform: translate(-1400%);
+            }
+
+            /* 59.2% {
+                transform: translate(-1500%);
+            }
+
+            62.9% {
+                transform: translate(-1600%);
+            }
+
+            66.6% {
+                transform: translate(-1700%);
+            }
+
+            70.3% {
+                transform: translate(-1800%);
+            }
+
+            74% {
+                transform: translate(-1900%);
+            }
+
+            77.7% {
+                transform: translate(-2000%);
+            }
+
+            81.4% {
+                transform: translate(-2100%);
+            }
+
+            85.1% {
+                transform: translate(-2200%);
+            }
+
+            88.8% {
+                transform: translate(-2300%);
+            }
+
+            92.5% {
+                transform: translate(-2400%);
+            } */
+
+            /* 96.2%{
+        transform: translate(-2500%);
+    }
+    100%{
+        transform: translate(-2500%);
+    } */
+            /* 25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    } */
+        }
+
+        /* 
+.content {
+    height: 400px;
+    width: 750px;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+}
+
+.content .images {
+    height: 100%;
+    width: 100%;
+}*/
+/* 
+.images img {
+    height: 100%;
+    width: 500px;
+}  */
+.wrapper img{
+    width: 600px;
+}
+    </style>
+</head>
+
+<body>
+
+    
+    <span class="leftText">
+        <!-- RAMAGYA<br /> -->
+        <span class="love">Academy </span><br />
+       Started  <br />
+        <span class="since">since</span><br />
+        <span id="time">XXX.xxxxx</span><br />
+        <span class="days">days</span>
+       <br><br> <p style="font-size: 50px;">🌟Dont Give Up🌟</p>
+        
+    </span>
+
+
+
+    <!--Basic structure of slider-->
+    <div class="container">
+        <!--Area of the images-->
+        <div class="wrapper">
+            <img src="/img and video/g4.jpg">
+            <img src="/img and video/g6.jpg">
+            <img src="/img and video/g8.jpg">
+            <img src="/img and video/g3.jpg">
+            
+            <img src="/img and video/g1.jpg">
+            <img src="/img and video/g2.webp">
+            
+            <img src="/img and video/g7.jpg">
+            
+            <img src="/img and video/g9.jpg">
+            <img src="/img and video/g10.jpg">
+            <img src="/img and video/g11.jpg">
+            <img src="/img and video/g12.jpg">
+            <img src="/img and video/g13.jpg">
+            <img src="/img and video/g14.jpg">
+            
+        </div>
+
+    </div>
+
+    <!--         
+        <div class="content">
+            <div class="images">
+               
+            </div>
+         </div> -->
+    <!-- <script>
+            var indexValue = 0;
+            function slideShow(){
+              setTimeout(slideShow, 2);
+              var x;
+              const img = document.querySelectorAll("img");
+              for(x = 0; x < img.length; x++){
+                img[x].style.display = "none";
+              }
+              indexValue++;
+              if(indexValue > img.length){indexValue = 1}
+              img[indexValue -1].style.display = "block";
+            }
+            slideShow();
+         </script> -->
+
+
+
+    <!--<span class="heart"><3</span>-->
+
+
+    <script>
+
+        function getLoveTime() {
+            //14. April 2016
+            var time = Date.now() - new Date(2003, 2 - 1, 10, 0, 0, 0, 0).getTime();
+            time = new Date(time);
+            return time / (1000 * 60 * 60 * 24);
+        }
+
+        function formatNumber(num, a) {
+            num = num + "";
+            let before = num.split(".")[0];
+            let after = num.split(".")[1];
+            while (after.length < a)
+                after += "0";
+            return before + "<small>" + "." + after + "</small>";
+        }
+
+        setInterval(function () {
+            document.getElementById("time").innerHTML = formatNumber(Math.round(getLoveTime() * 100000) / 100000, 5);
+        }, 1000);
+
+    </script>
+
+</body>
+
+</html>

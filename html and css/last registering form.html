@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        *{
+            /* color: pink; */
+        }
+        .heading {
+            margin-left: 100px;
+        }
+        .edit{
+            border: 2px solid black;
+            width: 50%;
+            margin-left: 300px;
+        }
+        .text{
+            margin:0px 50px;
+        }
+        textarea{
+            width: 600px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="edit">
+    
+    <h1 align="center"> WELCOME TO ACADEMY.... </h1>
+
+<div class="text">
+    <br><br><b>--Personal Information--</b>
+
+    <form action="last registering form.php"  method="post">
+
+        <lable for="name">
+          <p> Name <input type="text" id="Name" name="Name"> </p>
+
+            Enter Registered E-mail id <input id="Email" type="email" name="Email"><br><br>
+
+            Phone number <input id="Phone" type="text" name="Phone"><br><br>
+
+            Date Of Birth <input id="Dob" type="date" name="Dob"><br><br>
+
+            Age <input type="number" id="Age" name="Age"><br><br>
+
+            Gender 
+            <input id="Gender" type="radio" name="Gender" value="M"> M
+            <input type="radio" name="Gender" id="Gender" value="F">F
+            <input type="radio" name="Gender" id="Gender" value="Other">Other<br><br>
+
+
+
+            Residence Address <br> <textarea cols=100 rows=5 id="Address" name="Address" type="text"></textarea><br><br>
+
+            Residance State
+            <select value="place" id="State" name="State">
+                <option value="" name="State">SELECT STATE
+                <option value="Gujarat" name="State">Gujarat
+                <option value="Maharashtra" name="State">Maharashtra
+                <option value="Delhi" name="State">Delhi
+                <option value="Kerela" name="State">Kerela<br><br>
+            </select>
+
+
+
+
+            <br><br> <b>--Academical Information--</b><br><br>
+
+            Preferable City
+            <select value="place" id="City" name="City">
+                <option value="" name="City">SELECT CITY
+                <option value="New Delhi" name="City">New Delhi
+                <option value="Gangot" name="City">Gangot
+                <option value="Kolkatta" name="City">Kolkatta
+                <option value="Hyderabad" name="City">Hyderabad
+                <option value="Bombay" name="City">Bombay
+                <option value="Jaipur" name="City">Jaipur
+                <option value="Patna" name="City">Patna
+                <option value="Chennai" name="City">Chennai<br><br>
+
+            </select><br><br>
+
+            Preferable Game
+            <select value="g" id="Game" name="Game">
+                <option value="" name="Game">SELECT GAME
+                <option value="Cricket" name="Game">Cricket
+                <option value="Swimming" name="Game">Swimming
+                <option value="Tennis" name="Game">Tennis
+                <option value="Basketball" name="Game">Basketball
+                <!-- <option value="g"> -->
+            </select><br><br>
+
+            Course Duration
+            <select value="c" id="Duration"  name="Duration">
+                <option value="" name="Duration">SELECT TIME DURATION
+                <option value="1 month" name="Duration"> 1 month
+                <option value="6 month" name="Duration"> 6 month
+                <option value="12 month" name="Duration"> 12 month
+                </select> <br><br>
+
+            Query(if any)<br> <textarea cols=100 rows=5 id="Suggestion" name="Suggestion"></textarea><br><br>
+
+            <input type="Submit" value="SUBMIT HERE" id="Submit" name="Submit">
+            <input type="Reset" value="RESET NOW">
+        </div>
+    </form>
+</div>
+</body>
+
+</html>
+
+
+
